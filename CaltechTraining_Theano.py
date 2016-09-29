@@ -25,12 +25,20 @@ from Michael Nielsen
 GPU = True
 
 if GPU:
+<<<<<<< HEAD
 	print "Running on GPU. To run on CPU set variable GPU to false"
 	try: theano.config.floatX = 'float32'
 	except: pass
 	theano.config.floatX='float32'
 else :
 	print "Running on CPU. To run on GPU set variable GPU to true"
+=======
+	print "Running on GPU. To run on CPU set variable GPU to False"
+	try: theano.config.floatX = 'float32'
+else:
+	print "Running on CPU. To run on GPU set variable GPU to True"
+
+>>>>>>> 6b3f2de3aa9fbf390e9d5d411d1b67ba33c68e48
 def linear(z): return z
 def ReLU(z): return T.maximum(0.0, z)
 
